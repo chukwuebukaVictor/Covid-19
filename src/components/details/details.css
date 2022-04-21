@@ -1,0 +1,15 @@
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+  }
+  
+  .nav{
+      padding-right: 2rem;
+  }
+
+  .back-icon{
+      font-size: 2rem;
+      font-weight: 900;
+  }
