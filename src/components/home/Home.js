@@ -1,6 +1,7 @@
 import { AiOutlineSetting } from 'react-icons/ai';
 import { FaMicrophone } from 'react-icons/fa';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import { Link } from 'react-router-dom'
 import './home.css'
 
 function Home() {
@@ -19,14 +20,18 @@ function Home() {
       <input type="text" placeholder="Search Country" />
       </div>
       <div className="d-grid a-countries">
-        <div>
+      <Link to="details">
+        <div className="one-country">
           <h1><BsArrowRightCircle /></h1>
           <div className="country">Country1</div>
         </div>
-        <div>
+      </Link>
+      <Link to="details">
+        <div className="one-country">
           <h1><BsArrowRightCircle /></h1>
           <div className="country">Country2</div>
         </div>
+      </Link>  
         <div>
           <h1><BsArrowRightCircle /></h1>
           <div className="country">Country3</div>

@@ -1,6 +1,6 @@
-/* .d-flex{
+.d-flex{
   display: flex;
-} */
+}
 
 .main{
   display: flex;
@@ -29,8 +29,6 @@
 
 .a-countries{
   border: 1px solid red;
-  /* padding: 2rem; */
-  /* margin: 0 2rem; */
   width: 80%;
   height: 100vh;
 }
@@ -39,10 +37,11 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  /* align-items:flex-end */
-  /* justify-content: center; */
+}
 
-
+.one-country{
+  display: flex;
+  flex-direction: column;
 }
 
 h1{
