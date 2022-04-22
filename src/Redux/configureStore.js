@@ -1,13 +1,10 @@
-import { createStore } from 'redux';
-import countriesReducer from './countries';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import reducer from './covidData/countriesCovidData'
 
-const store = createStore(countriesReducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;
-
-
-
-
 // import { applyMiddleware, combineReducers, createStore } from 'redux';
 // import thunk from 'redux-thunk';
 // import rocketReducer from './rockets/rockets';
