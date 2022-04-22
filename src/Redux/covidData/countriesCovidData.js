@@ -84,10 +84,10 @@ export const fetchCountriesData = () => async (dispatch) => {
   try {
     const covidApi = await axios.get('https://api.covid19api.com/summary');
     const countries = covidApi.data.Countries;
-    const africa = ['Nigeria', 'Ghana', 'Ethiopia', 'Kenya', 'Senegal', 'Cameroon', 'Rwanda', 'Chad', 'Gambia', 'Burundi', 'Sierra Leone', 'Zimbabwe', 'South Africa', 'Morocco', 'Tunisia', 'Zambia', 'Egypt', 'Algeria', 'Uganda', 'Namibia'];
+    const africanCountries = ['Nigeria', 'Ghana', 'Ethiopia', 'Kenya', 'Senegal', 'Cameroon', 'Rwanda', 'Chad', 'Gambia', 'Burundi', 'Sierra Leone', 'Zimbabwe', 'South Africa', 'Morocco', 'Tunisia', 'Zambia', 'Egypt', 'Algeria', 'Uganda', 'Namibia'];
     const payload = [];
     for (let i = 0; i < countries.length; i += 1) {
-      if (africa.indexOf(countries[i].Country) !== -1) {
+      if (africanCountries.indexOf(countries[i].Country) !== -1) {
         payload.push({
           ID: countries[i].ID,
           CountryName: countries[i].Country,
@@ -116,6 +116,7 @@ const reducer = (state = [], action) => {
   switch (action.type) {
     case FETCH_REQUEST:
       return {
+        
         ...state,
         loading: true,
       };

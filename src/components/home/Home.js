@@ -78,11 +78,12 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import RenderData from '../renderData/RenderData';
+import './home.css'
+import { AiOutlineSetting } from 'react-icons/ai';
+ import { FaMicrophone } from 'react-icons/fa';
+//  import { BsArrowRightCircle } from 'react-icons/bs';
 
-const searchDisplayStyle = {
-  marginBottom: '1rem',
-  fontSize: '2rem',
-};
+
 
 const Home = () => {
   const countries = useSelector((state) => state);
@@ -90,17 +91,17 @@ const Home = () => {
   const [searchItem, setSearchItem] = useState('');
   const loadingStatus = countries.loading;
   return (
-    <div>
-      <div className="nav_bar">
-        <span className="nav_header">Top 20 African countries COVID cases</span>
-        <i className="fa fa-microphone microphone_button" aria-hidden="true" />
-        <i className="fa fa-gear nav_buttons" aria-hidden="true" />
+    <div className="main">
+      <div className="nav">
+        <h2 className="nav-header">Top 20 African countries COVID cases</h2>
+        <div>
+        <AiOutlineSetting className="header-icon" />
+          <FaMicrophone className="header-icon" />
+        </div>
       </div>
-      <div className="image_wrapper">
-        <div className="image_container" />
-      </div>
-      <p className="search_item_container">
-        <div style={searchDisplayStyle}>Search</div>
+      <div className="container1">
+      <div className="search_item_container">
+        <p>Search</p>
         <div>
           <input
             value={searchItem}
@@ -109,8 +110,8 @@ const Home = () => {
             placeholder="Search by country"
           />
         </div>
-      </p>
-      <div className="country_link_container">
+      </div>
+      <div className="container">
         {loadingStatus === false
           ? countries.data
             .filter(
@@ -118,15 +119,16 @@ const Home = () => {
             )
             .map(
               (country) => (
-                <>
+                // <div className="d-grid">
                   <RenderData
                     country={country.CountryName}
                     key={country.ID}
                     total={country.TotalConfirmed}
                   />
-                </>
+                //  </div>
               ),
-            ) : <h1>***Loading***</h1>}
+            ) : null}
+      </div>
       </div>
     </div>
   );

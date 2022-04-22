@@ -49,7 +49,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/details" element={<Details />} />
+        <Route exact path="/details/:country" element={<Details />} />
       </Routes>
     </Router>
   );
