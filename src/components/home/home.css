@@ -31,7 +31,7 @@
   margin-top: 1rem;
   justify-content: center;
   width: 80%;
-  background-color: aqua;
+  /* background-color: aqua; */
   height: auto;
   text-align: center;
   margin:0 auto;
@@ -42,8 +42,8 @@
   grid-template-columns: 1fr 1fr;
 
   border: 1px solid red;
-  color:#ffffff;
-  background-color: blueviolet;
+  color:00000;
+  /* background-color: blueviolet; */
   text-decoration: none;
   padding: 2rem 0;
   font-weight: 700;
@@ -60,6 +60,12 @@
   align-items: center;
   /* border: 1px solid red; */
 
+}
+
+.background-img{
+  background-image: url('../img/covid1.jpg');
+  background-image: url('../img/covid1.jpg');
+  height: 100vh;
 }
 /* .a-countries{
   border: 1px solid red;
@@ -90,6 +96,10 @@ align-self: center;
   background-color: brown;
 
 }*/
+
+.image_container{
+  background-image: url('../img/virus.png');
+}
 
 .nav{
   display: flex;

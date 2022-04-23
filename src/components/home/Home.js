@@ -85,23 +85,79 @@ import { AiOutlineSetting } from 'react-icons/ai';
 
 
 
+// const Home = () => {
+//   const countries = useSelector((state) => state);
+//   console.log(countries);
+//   const [searchItem, setSearchItem] = useState('');
+//   const loadingStatus = countries.loading;
+//   return (
+//     <div className="main">
+//       <div className="nav">
+//         <h2 className="nav-header">Top 20 African countries COVID cases</h2>
+//         <div>
+//           <AiOutlineSetting className="header-icon" />
+//           <FaMicrophone className="header-icon" />
+//         </div>
+//       </div>
+//       <div className="image_wrapper">
+//         <div className="image_container" />
+//       </div>
+//        {/* <div className="container1"> */}
+//         <div className="search_item_container">
+//          <p>Search</p>
+//         <div>
+//           <input
+//             value={searchItem}
+//             type="text"
+//             onChange={(e) => setSearchItem(e.target.value)}
+//             placeholder="Search by country"
+//           />
+//         </div>
+//       </div>
+//       <div className="container background-img">
+//             {loadingStatus === false
+//             ? countries.data
+//             .filter(
+//               (country) => country.CountryName.toLowerCase().includes(searchItem.toLowerCase()),
+//             )
+//             .map(
+//               (country) => (
+//                 // <div className="d-grid">
+//                   <RenderData
+//                     country={country.CountryName}
+//                     key={country.ID}
+//                     total={country.TotalConfirmed}
+//                   />
+//                 //  </div>
+//               ),
+//             ) : null}
+//       </div>
+//     </div>
+//     // </div>
+//   );
+// };
+
+const searchDisplayStyle = {
+  marginBottom: '1rem',
+  fontSize: '2rem',
+};
+
 const Home = () => {
   const countries = useSelector((state) => state);
-  console.log(countries);
   const [searchItem, setSearchItem] = useState('');
   const loadingStatus = countries.loading;
   return (
-    <div className="main">
-      <div className="nav">
-        <h2 className="nav-header">Top 20 African countries COVID cases</h2>
-        <div>
+    <div>
+      <div className="nav_bar">
+        <span className="nav_header">Top 20 African countries COVID cases</span>
         <AiOutlineSetting className="header-icon" />
-          <FaMicrophone className="header-icon" />
-        </div>
+         <FaMicrophone className="header-icon" />
       </div>
-      <div className="container1">
-      <div className="search_item_container">
-        <p>Search</p>
+      <div className="image_wrapper">
+        <div className="image_container" />
+      </div>
+      <p className="search_item_container">
+        <div style={searchDisplayStyle}>Search</div>
         <div>
           <input
             value={searchItem}
@@ -110,8 +166,8 @@ const Home = () => {
             placeholder="Search by country"
           />
         </div>
-      </div>
-      <div className="container">
+      </p>
+      <div className="country_link_container">
         {loadingStatus === false
           ? countries.data
             .filter(
@@ -119,19 +175,19 @@ const Home = () => {
             )
             .map(
               (country) => (
-                // <div className="d-grid">
+                <>
                   <RenderData
                     country={country.CountryName}
                     key={country.ID}
                     total={country.TotalConfirmed}
                   />
-                //  </div>
+                </>
               ),
-            ) : null}
-      </div>
+            ) : <h1>***Loading***</h1>}
       </div>
     </div>
   );
 };
+
 
 export default Home;
