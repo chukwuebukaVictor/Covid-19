@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [COVID African Data]()
+- [COVID African Data](https://victor-covid-19-app.netlify.app/)
 
 ## Loom Video
 
