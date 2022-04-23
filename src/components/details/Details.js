@@ -74,7 +74,6 @@ const Details = () => {
   let covidData = [];
   if (countries !== undefined) {
     covidData = countries.data.filter((data) => data.CountryName === country);
-    console.log(covidData)
   }
   const countryFlag = `https://countryflagsapi.com/png/${country}`;
 
@@ -90,16 +89,6 @@ const Details = () => {
          <FaMicrophone className="header-icon" />
         </div>
         </div>
-      {/* <div className="nav_bar">
-        <div className="nav-details">
-        <Link to={`/`}><MdArrowBackIosNew  className="header-icon" /></Link>
-        <h2 className="nav-header">COVID cases data</h2>
-        </div>
-        <div>
-        <AiOutlineSetting className="header-icon" />
-          <FaMicrophone className="header-icon" />
-        </div>
-      </div> */}
       <div className="details_container">
         <div>
           <h1 className="description_header">{`${country}'s Covid Data`}</h1>

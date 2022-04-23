@@ -26,7 +26,7 @@ const Home = () => {
       <div className="image_wrapper">
         <div className="image_container" />
       </div>
-      <p className="search_item_container">
+      <div className="search_item_container">
         <div style={searchDisplayStyle}>Search</div>
         <div className="search-input">
           <input
@@ -36,7 +36,7 @@ const Home = () => {
             placeholder="Search by country"
           />
         </div>
-      </p>
+      </div>
       <div className="country_link_container">
         {loadingStatus === false
           ? countries.data

@@ -10,6 +10,10 @@
 
 - [COVID African Data]()
 
+## Loom Video
+
+- [Project Loom Video](https://www.loom.com/share/8972d573f2f14cc6be9b05f234a41bb0/../../../../package-lock.json)
+
 ## Built With
 
 - React

@@ -169,4 +169,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.next1{
+    align-self: flex-end;
+    color: white;
+    margin: 0 1rem 0 0;
+}
   
