@@ -82,7 +82,14 @@ const Details = () => {
 
   return (
     <>
-      <div className="nav">
+    {/* <div className="nav_bar">
+        <span className="nav_header">COVID cases data</span>
+        <div>
+        <AiOutlineSetting className="header-icon" />
+         <FaMicrophone className="header-icon" />
+
+        </div> */}
+      <div className="nav_bar">
         <div className="nav-details">
         <Link to={`/`}><MdArrowBackIosNew  className="header-icon" /></Link>
         <h2 className="nav-header">COVID cases data</h2>
