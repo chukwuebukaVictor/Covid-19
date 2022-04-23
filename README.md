@@ -12,7 +12,7 @@
 
 ## Loom Video
 
-- [Project Loom Video](https://www.loom.com/share/8972d573f2f14cc6be9b05f234a41bb0/../../../../package-lock.json)
+- [Project Loom Video](https://www.loom.com/share/8972d573f2f14cc6be9b05f2/)
 
 ## Built With
 
@@ -21,13 +21,18 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy follow these simple example steps.  
 
-- Clone the repository by running git clone `https://github.com/chukwuebukaVictor/React_redux_capstone_project.git`
-- Navigate to the folder `cd React_redux_capstone_project`
-- Install packages by running `npm install`
-- Run the app by running `npm start`
-
+1. Open the terminal window and clone the repository using this command:  
+`git clone https://github.com/chukwuebukaVictor/covid-19.git` 
+2. Change the directory to the react-bookstore directory:  
+`cd covid-19`  
+3. Install the project's dependencies by running this command:   
+`npm install`   
+4. Run the application using:  
+`npm start`  
+5. For runnig the application tests excute below command:   
+`npm run test`
 ## Author
 
 👤 **Chukwuebuka Victor Ozoede**

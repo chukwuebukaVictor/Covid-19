@@ -27,7 +27,7 @@ const Home = () => {
         <div className="image_container" />
       </div>
       <div className="search_item_container">
-        <div style={searchDisplayStyle}>Search</div>
+        <div style={searchDisplayStyle}>Africa</div>
         <div className="search-input">
           <input
             className="search-input1"
