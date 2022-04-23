@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import RenderData from '../renderData/RenderData';
 import { AiOutlineSetting } from 'react-icons/ai';
- import { FaMicrophone } from 'react-icons/fa';
+import { FaMicrophone } from 'react-icons/fa';
+import RenderData from '../renderData/RenderData';
 
- const searchDisplayStyle = {
+const searchDisplayStyle = {
   marginBottom: '1rem',
   fontSize: '2rem',
 };
@@ -18,8 +18,8 @@ const Home = () => {
       <div className="nav_bar">
         <span className="nav_header">Top 20 African countries COVID cases</span>
         <div>
-        <AiOutlineSetting className="header-icon" />
-         <FaMicrophone className="header-icon" />
+          <AiOutlineSetting className="header-icon" />
+          <FaMicrophone className="header-icon" />
 
         </div>
       </div>
@@ -58,6 +58,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;

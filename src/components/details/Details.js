@@ -52,19 +52,19 @@
 //   //       <i className="fa fa-microphone microphone_button" aria-hidden="true" />
 //   //       <i className="fa fa-gear nav_buttons" aria-hidden="true" />
 //   //     </div>
-      
+
 //   //     </>
 //   //   )
 
 // }
 
 // export default Details;
-  
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import { AiOutlineSetting } from 'react-icons/ai';
- import { FaMicrophone } from 'react-icons/fa';
+import { FaMicrophone } from 'react-icons/fa';
 import { MdArrowBackIosNew } from 'react-icons/md';
 
 const Details = () => {
@@ -79,16 +79,16 @@ const Details = () => {
 
   return (
     <>
-    <div className="nav_bar">
+      <div className="nav_bar">
         <div className="header-detail-left">
-        <Link to={`/`}><MdArrowBackIosNew className="next"/></Link>
-        <span className="nav_header">COVID cases data</span>
+          <Link to="/"><MdArrowBackIosNew className="next" /></Link>
+          <span className="nav_header">COVID cases data</span>
         </div>
         <div>
-        <AiOutlineSetting className="header-icon" />
-         <FaMicrophone className="header-icon" />
+          <AiOutlineSetting className="header-icon" />
+          <FaMicrophone className="header-icon" />
         </div>
-        </div>
+      </div>
       <div className="details_container">
         <div>
           <h1 className="description_header">{`${country}'s Covid Data`}</h1>

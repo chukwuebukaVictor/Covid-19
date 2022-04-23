@@ -1,4 +1,5 @@
-import reducer from "../../Redux/covidData/countriesCovidData";
+import reducer from '../../Redux/covidData/countriesCovidData';
+
 const mockStore = {
   data: {
     ID: '1',
