@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <div className="nav_bar">
-        <span className="nav_header">Top 20 African countries COVID cases</span>
+        <div className="nav_header">Top 20 African countries COVID cases</div>
         <div>
           <AiOutlineSetting className="header-icon" />
           <FaMicrophone className="header-icon" />
@@ -30,6 +30,7 @@ const Home = () => {
         <div style={searchDisplayStyle}>Search</div>
         <div className="search-input">
           <input
+            className="search-input1"
             value={searchItem}
             type="text"
             onChange={(e) => setSearchItem(e.target.value)}

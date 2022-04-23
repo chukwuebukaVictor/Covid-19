@@ -82,7 +82,7 @@ const Details = () => {
       <div className="nav_bar">
         <div className="header-detail-left">
           <Link to="/"><MdArrowBackIosNew className="next" /></Link>
-          <span className="nav_header">COVID cases data</span>
+          <div className="nav_header">COVID cases data</div>
         </div>
         <div>
           <AiOutlineSetting className="header-icon" />
