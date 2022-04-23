@@ -66,8 +66,6 @@ import { useParams, Link } from 'react-router-dom';
 import { AiOutlineSetting } from 'react-icons/ai';
  import { FaMicrophone } from 'react-icons/fa';
 import { MdArrowBackIosNew } from 'react-icons/md';
-import './details.css'
-
 
 const Details = () => {
   const params = useParams();
@@ -82,14 +80,17 @@ const Details = () => {
 
   return (
     <>
-    {/* <div className="nav_bar">
+    <div className="nav_bar">
+        <div className="header-detail-left">
+        <Link to={`/`}><MdArrowBackIosNew className="next"/></Link>
         <span className="nav_header">COVID cases data</span>
+        </div>
         <div>
         <AiOutlineSetting className="header-icon" />
          <FaMicrophone className="header-icon" />
-
-        </div> */}
-      <div className="nav_bar">
+        </div>
+        </div>
+      {/* <div className="nav_bar">
         <div className="nav-details">
         <Link to={`/`}><MdArrowBackIosNew  className="header-icon" /></Link>
         <h2 className="nav-header">COVID cases data</h2>
@@ -98,7 +99,7 @@ const Details = () => {
         <AiOutlineSetting className="header-icon" />
           <FaMicrophone className="header-icon" />
         </div>
-      </div>
+      </div> */}
       <div className="details_container">
         <div>
           <h1 className="description_header">{`${country}'s Covid Data`}</h1>

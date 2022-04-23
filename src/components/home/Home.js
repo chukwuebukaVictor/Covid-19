@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import RenderData from '../renderData/RenderData';
-import './home.css'
 import { AiOutlineSetting } from 'react-icons/ai';
  import { FaMicrophone } from 'react-icons/fa';
 
