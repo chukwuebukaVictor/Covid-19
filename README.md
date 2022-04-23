@@ -12,7 +12,7 @@
 
 ## Loom Video
 
-- [Project Loom Video](https://www.loom.com/share/8972d573f2f14cc6be9b05f2/)
+- [Project Loom Video](https://www.loom.com/share/8972d573f2f14cc6be9b05f234a41bb0)
 
 ## Built With
 
@@ -31,7 +31,7 @@ To get a local copy follow these simple example steps.
 `npm install`   
 4. Run the application using:  
 `npm start`  
-5. For runnig the application tests excute below command:   
+5. For running the application tests execute below command:   
 `npm run test`
 ## Author
 
